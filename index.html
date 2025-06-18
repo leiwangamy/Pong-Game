@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8" />
+  <title>Pong Game</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
 
+  <!-- The canvas where the game runs -->
+  <canvas id="gameCanvas" width="800" height="500"></canvas>
+
+  <!-- Instruction overlay -->
+  <div id="instructions">
+    <div class="box">
+      <h1>PONG Game</h1>
+      <p>🎮 Use <strong>↑/↓</strong> or  / <strong>Mouse</strong> to move</p>
+      <p>📱 Touch controls (mobile-ready)</p>
+      <p>🏆 First to 5 points wins</p>
+      <p>🔄 Press <strong>R</strong> to restart anytime</p>
+      <button onclick="startGame()">▶ Start Game & Music</button>
+    </div>
+  </div>
+
+  <!-- Background music -->
+  <audio id="bgMusic" src="background.mp3" loop></audio>
+
+  <!-- Game logic -->
+  <script src="script.js"></script>
+
+</body>
 </html>
