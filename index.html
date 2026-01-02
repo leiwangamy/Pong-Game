@@ -7,26 +7,26 @@
 </head>
 <body>
 
-  <!-- The canvas where the game runs -->
   <canvas id="gameCanvas" width="800" height="500"></canvas>
 
-  <!-- Instruction overlay -->
   <div id="instructions">
     <div class="box">
       <h1>PONG Game</h1>
-      <p>🎮 Use <strong>↑/↓</strong> or  / <strong>Mouse</strong> to move</p>
+
+      <p>🎮 1 Player: <strong>Mouse / Touch</strong> (left paddle) vs AI</p>
+      <p>🎮 2 Players: Left = <strong>W/S</strong>, Right = <strong>↑/↓</strong></p>
+
       <p>📱 Touch controls (mobile-ready)</p>
       <p>🏆 First to 5 points wins</p>
-      <p>🔄 Press <strong>R</strong> to restart anytime</p>
-      <button onclick="startGame()">▶ Start Game & Music</button>
+      <p>🔄 Press <strong>R</strong> to Return to Menu</p>
+
+      <button onclick="startGame('1p')">▶ 1 Player (vs AI)</button>
+      <button onclick="startGame('2p')">▶ 2 Players</button>
     </div>
   </div>
 
-  <!-- Background music -->
   <audio id="bgMusic" src="background.mp3" loop></audio>
 
-  <!-- Game logic -->
   <script src="script.js"></script>
-
 </body>
 </html>
